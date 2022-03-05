@@ -1,22 +1,22 @@
 -- Create a database
--- DROP DATABASE IF EXISTS quickstartdb;
-CREATE DATABASE quickstartdb;
-USE quickstartdb;
+CREATE DATABASE petstore;
+USE petstore;
 
--- Create a table and insert rows
-DROP TABLE IF EXISTS inventory;
-CREATE TABLE inventory (id serial PRIMARY KEY, name VARCHAR(50), quantity INTEGER);
-INSERT INTO inventory (name, quantity) VALUES ('banana', 150);
-INSERT INTO inventory (name, quantity) VALUES ('orange', 154);
-INSERT INTO inventory (name, quantity) VALUES ('apple', 100);
+-- Create a table 
+CREATE TABLE pet (id INTEGER, type VARCHAR(50), breed VARCHAR(50), age INTEGER);
+
+-- insert rows
+INSERT INTO pet VALUES (1, 'dog', 'poodle', 2);
+INSERT INTO pet VALUES (2, 'dog', 'Maltese', 4);
+INSERT INTO pet VALUES (3, 'cat', 'Persian', 6);
 
 -- Read
-SELECT * FROM inventory;
+SELECT * FROM pet;
 
 -- Update
-UPDATE inventory SET quantity = 200 WHERE id = 1;
-SELECT * FROM inventory;
+UPDATE pet SET age = 3 WHERE id = 1;
+SELECT * FROM pet;
 
 -- Delete
-DELETE FROM inventory WHERE id = 2;
-SELECT * FROM inventory;
+DELETE FROM pet WHERE id = 2;
+SELECT * FROM pet;
