@@ -3,7 +3,7 @@
 ###                 Execute the following 4 commands one by one              ###
 ################################################################################
 
-### 1. Delete Output Directory: 
+### 1. Delete the Output Directory if it is there: 
 
 hadoop fs -rm -r output/pig/temp
 
@@ -15,7 +15,7 @@ pig max-temperature.pig
 
 hadoop fs -ls output/pig/temp/
 
-### 4. View results (if one file name is part-v001-o000-r-00000)
+### 4. View results (if one file name is part-v001-o000-r-00000):
 
 hadoop fs -cat output/pig/temp/part-v001-o000-r-00000
 
