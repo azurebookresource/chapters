@@ -7,15 +7,21 @@
 
 hadoop fs -rm -r output/pig/temp
 
-### 2. Submit Pig Script:
+### 2. Start the Pig Grunt Shell:
 
-pig max-temperature.pig
+pig –x mapreduce
 
-### 3. Check output file name:
+### 3. Execute pig 4 pig scripts in Start the Pig Grunt Shell:
+
+### 4. Terminate the GrGrunt Shell:
+
+Ctrl + c
+
+### 5. Check output file name:
 
 hadoop fs -ls output/pig/temp/
 
-### 4. View results (if one file name is part-v001-o000-r-00000):
+### 6. View results (if one file name is part-r-00000):
 
-hadoop fs -cat output/pig/temp/part-v001-o000-r-00000
+hadoop fs -cat output/pig/temp/part-r-00000
 
