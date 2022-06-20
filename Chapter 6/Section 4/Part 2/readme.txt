@@ -1,6 +1,6 @@
 ################################################################################
 ### Steps to run Pig Script to compute maximume temperature by airport code  ###
-###                 Execute the following 4 commands one by one              ###
+###                 Execute the following 6 commands one by one              ###
 ################################################################################
 
 ### 1. Delete the Output Directory if it is there: 
