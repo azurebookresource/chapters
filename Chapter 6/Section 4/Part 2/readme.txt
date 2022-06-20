@@ -9,7 +9,7 @@ hadoop fs -rm -r output/pig/temp
 
 ### 2. Start the Pig Grunt Shell:
 
-pig –x mapreduce
+pig -x mapreduce
 
 ### 3. Execute the four pig scripts in max-temperature.pig (I provided for you) one by one:
 
