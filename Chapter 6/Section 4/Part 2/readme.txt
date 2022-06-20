@@ -17,7 +17,7 @@ grunt>
 
 ### 4. Terminate the Grunt Shell:
 
-Ctrl + c
+grunt>quit
 
 ### 5. Check output file name:
 
